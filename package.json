@@ -1,0 +1,42 @@
+{
+  "name": "m36-leak-detector",
+  "version": "1.0.0",
+  "description": "M36 Card Reader and Leak Detector Application",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build-backend": "dotnet build backend/M36Backend/M36Backend.csproj",
+    "install-backend": "cd backend/M36Backend && dotnet restore"
+  },
+  "keywords": ["electron", "m36", "leak-detector", "card-reader"],
+  "author": "M36 Team",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "serialport": "^12.0.0",
+    "axios": "^1.5.0",
+    "electron-store": "^8.1.0",
+    "node-fetch": "^2.6.7"
+  },
+  "build": {
+    "appId": "com.m36.leak-detector",
+    "productName": "M36 Leak Detector",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "backend/M36Backend/bin/Release/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  }
+}

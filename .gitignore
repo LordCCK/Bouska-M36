@@ -1,0 +1,44 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Electron
+dist/
+out/
+*.log
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+packages/
+TestResults/
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Database
+*.db
+*.sqlite
+
+# ZPL label files (generated during testing)
+label_*.zpl
+
+# User specific
+appsettings.Development.json

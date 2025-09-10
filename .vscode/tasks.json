@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build M36 Application",
+			"type": "shell",
+			"command": "echo",
+			"args": [
+				"Building M36 Application - Install Node.js and .NET 6.0 SDK first"
+			],
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
