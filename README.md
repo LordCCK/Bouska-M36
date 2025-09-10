@@ -2,6 +2,16 @@
 
 Desktopová aplikace v Electronu s C# backendem pro M36 systém čtení karet a detekce úniku.
 
+## 🚀 Rychlé spuštění
+
+**Pro kolegy - kompletní návod:** Viz [INSTALACE.md](INSTALACE.md)
+
+### Zkrácená verze:
+1. Nainstalujte Node.js a .NET 8 SDK
+2. `npm install`
+3. `cd backend\M36Backend && dotnet restore && cd ..\..`
+4. `npm run dev`
+
 ## Funkce
 
 - 🔐 **Čtení karet** - Úvodní obrazovka pro načtení karty operátora
